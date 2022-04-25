@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import Cart from '../Cart/Cart.component';
-import Search from '../AlgoliaSearch/AlgoliaSearchBox.component';
+// import Search from '../AlgoliaSearch/AlgoliaSearchBox.component';
 import SVGMobileSearchIcon from '../SVG/SVGMobileSearchIcon.component';
 import Hamburger from './Hamburger.component';
 
@@ -56,7 +56,7 @@ const Navbar = () => (
           </Link>
         </div>
         <div className="flex items-center order-2 md:order-3" id="nav-content">
-          <Search />
+          {/* <Search /> */}
           <SVGMobileSearchIcon />
           <Cart />
         </div>
