@@ -7,6 +7,8 @@ import client from 'utils/apollo/ApolloClient';
 
 import { GET_SINGLE_PRODUCT } from 'utils/gql/GQL_QUERIES';
 
+import FancyDesign from './fancyDesign';
+
 /**
  * Display a single product with dynamic pretty urls
  */
@@ -15,9 +17,12 @@ const Produkt = ({ product }) => {
 
   return (
     <>
-      <Header title={`- ${product.name ? product.name : ''}`} />
+      <Header title={`- ${product.name ? product.name : ''}`} />      
       {product ? (
-        <SingleProduct product={product} />
+        <>
+          <SingleProduct product={product} />
+          <FancyDesign />
+        </>
       ) : (
         <div className="mt-8 text-2xl text-center">Laster produkt ...</div>
       )}

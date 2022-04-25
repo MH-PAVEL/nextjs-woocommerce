@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 import Navbar from './Navbar.component';
 
@@ -16,7 +17,7 @@ const Header = ({ title }) => (
         property="og:title"
         content="Nextjs Ecommerce with Woocommerce"
         key="pagetitle"
-      />
+      />         
     </Head>
     <Navbar />
   </>

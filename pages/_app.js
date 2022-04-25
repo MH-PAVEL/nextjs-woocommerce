@@ -9,6 +9,8 @@ import Footer from 'components/Footer/Footer.component';
 import 'styles/index.css';
 import 'styles/animate.min.css';
 import 'nprogress/nprogress.css';
+import "styles/FancyProductDesigner-all.min.css";
+import "styles/main.css";
 
 import client from 'utils/apollo/ApolloClient';
 
